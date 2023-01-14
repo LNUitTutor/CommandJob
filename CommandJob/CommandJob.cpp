@@ -25,5 +25,12 @@ int main()
 	double p = 1.0; std::cout << " p = " << p;
 	while (p < 1000) std::cout << ' ' << (p = mult(p));
 	std::cout << '\n';
+
+	// fast raising to a 4 power
+	double y = 5;
+	std::cout << y << "^4 = ";
+	y = mult(y, y);
+	y = mult(y, y);
+	std::cout << y << '\n';
 	system("pause");
 }
