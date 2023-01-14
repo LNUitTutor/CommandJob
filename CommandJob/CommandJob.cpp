@@ -3,6 +3,7 @@
 
 int main()
 {
+	// part #1
 	// test function add
 	std::cout << "Input a number: ";
 	double x; std::cin >> x;
@@ -10,6 +11,7 @@ int main()
 		<< "\n x + 5 = " << add(x, 5.0)
 		<< "\n x - 3 = " << add(x, -3.0) << '\n';
 
+	// part #2
 	// test add in a loop
 	double a[] = { 1,2,3,4,5 };
 	const int n = sizeof a / sizeof a[0];
@@ -21,6 +23,7 @@ int main()
 	}
 	std::cout << "\n s = " << s << '\n';
 
+	//part #3
 	// test function mult
 	double p = 1.0; std::cout << " p = " << p;
 	while (p < 1000) std::cout << ' ' << (p = mult(p));
